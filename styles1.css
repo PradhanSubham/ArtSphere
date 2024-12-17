@@ -1,0 +1,65 @@
+/* General Section */
+.our-work {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+}
+
+.our-work h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #1f76c3;
+}
+
+/* Grid Layout */
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Card Design */
+.work-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.work-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.work-info {
+    padding: 1rem;
+}
+
+.work-info h3 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.work-info p {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+/* Hover Effect */
+.work-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Scroll Animation */
+.work-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

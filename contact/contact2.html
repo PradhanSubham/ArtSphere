@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtSphere Get in Touch</title>
+    <link rel="stylesheet" href="./contact2.css">
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="contact-container">
+        <!-- Header Section -->
+        <div class="contact-header">
+            <div class="header-text">
+                <h1>Get in touch</h1>
+                <p>Want to get in touch? We'd love to hear from you. Here's how you can reach us.</p>
+            </div>
+            <div class="header-image">
+                <img src="customer2.jpg" alt="Person working on computer">
+            </div>
+        </div>
+
+        <!-- Contact Cards Section -->
+        <div class="contact-cards">
+            <!-- Talk to Sales Card -->
+            <div class="contact-card">
+                <div class="card-icon">
+                    <img src="phone.png" alt="Phone Icon">
+                </div>
+                <h2>Talk to Sales</h2>
+                <p>
+                    Interested in Artsphere's software? Just pick up the phone to chat with a member of our sales team.
+                </p>
+                <a href="tel:+6569556000" class="contact-number">+977 9813261162</a>
+                <a href="#" class="global-numbers">View all global numbers</a>
+            </div>
+
+            <!-- Customer Support Card -->
+            <div class="contact-card">
+                <div class="card-icon">
+                    <img src="message.png" alt="Chat Icon">
+                </div>
+                <h2>Contact Customer Support</h2>
+                <p>
+                    Sometimes you need a little help from your friends. Or a ArtSphere support rep. Don’t worry… we’re here for you.
+                </p>
+                <a href="#" class="contact-button">Contact Support</a>
+            </div>
+
+                <!-- Chat Container -->
+    <div class="chat-container">
+        <!-- Chat Button -->
+        <div class="chat-button" id="chat-button">
+            <img src="https://cdn-icons-png.flaticon.com/512/60/60525.png" alt="Chat">
+        </div>
+
+        <!-- Chat Popup -->
+        <div class="chat-popup" id="chat-popup">
+            <div class="chat-header">
+                <span>Chat Support</span>
+                <button class="close-btn" id="close-chat">&times;</button>
+            </div>
+            <div class="chat-body">
+                <p>How can we help you?</p>
+            </div>
+            <div class="chat-footer">
+                <input type="text" placeholder="Type your message here..." />
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        const chatButton = document.getElementById('chat-button');
+        const chatPopup = document.getElementById('chat-popup');
+        const closeChat = document.getElementById('close-chat');
+
+        // Open Popup
+        chatButton.addEventListener('click', () => {
+            chatPopup.classList.add('open');
+        });
+
+        // Close Popup
+        closeChat.addEventListener('click', () => {
+            chatPopup.classList.remove('open');
+        });
+    </script>
+
+    
+
+        </div>
+         <!-- Footer -->
+     <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>ART</h3>
+                <ul>
+                    <li><a href="#">Artists</a></li>
+                    <li><a href="#">Support Local Artists</a></li>
+                    <li><a href="#">Catalog</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>DISCOVER</h3>
+                <ul>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Services & Offerings</a></li>
+                    <li><a href="#">Licensing</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>ABOUT</h3>
+                <ul>
+                    <li><a href="#">Our Impact</a></li>
+                    <li><a href="#">People</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-column contact-info">
+                <h3>Contact us today!</h3>
+                <p><a href="mailto:info@artlifting.com">info@artlifting.com</a></p>
+                <p>302.825.5278</p>
+                <p>120 Causeway Street #400<br>Boston, MA 02114</p>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; ARTLIFTING 2024 <a href="#">PRIVACY POLICY</a> | <a href="#">TERMS AND CONDITIONS</a></p>
+    </footer>
+    </div>
+</body>
+</html>

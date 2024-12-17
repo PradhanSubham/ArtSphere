@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Impact - Art Sphere</title>
+    <link rel="stylesheet" href="our work.css">
+        <!-- Added -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>ART SPHERE</h1>
+        <nav>
+            <ul>
+                <li><a href="#artists">ARTISTS</a></li>
+                <li><a href="#our-work">OUR WORK</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li class="dropdown">
+                    <a href="#categories">CATEGORIES</a>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="#">Artists</a></li>
+                            <li><a href="#">Photographers</a></li>
+                            <li><a href="#">Handicrafts</a></li>
+                            <li><a href="#">Sculptors</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="sign-up-login">
+            <a href="form.html">Sign Up</a>
+            <a href="signin.html">Log In</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Art with Impact</h2>
+            <p>Crafting Beauty from Inspiration.</p>
+            <button>Explore More</button>
+        </div>
+    </section>
+
+    <!-- Client Impact Section -->
+<section class="client-impact">
+    <div class="content">
+        <h3><strong>Over 500 Satisfied Clients</strong></h3>
+        <p><strong>At ArtLifting Nepal, our clients are catalysts for change, revolutionizing how businesses use art to create social impact in the built environment. Explore our portfolio below to see how we collaborate with organizations to make a difference.</strong></p>
+        <p><strong>With an impressive NPS score of 9.8/10, it’s clear that our clients love our work. We partner closely with over 50 Fortune 500 companies to implement scalable art programs.</strong></p>
+        <a href="contact.html" class="contact-us-btn">Contact Us</a>
+    </div>
+      <!-- Video Section -->
+
+      <div class="container">
+        <h2 class="text-center font-weight-bold">Our Partners</h2>
+        <section class="customer-logos slider">
+            <div class="slide"><img src="images/adidas.png" alt="logo"></div>
+            <div class="slide"><img src="images/facebook.png" alt="logo"></div>
+            <div class="slide"><img src="images/google.png" alt="logo"></div>
+            <div class="slide"><img src="images/instagram.png" alt="logo"></div>
+            <div class="slide"><img src="images/nike.png" alt="logo"></div>
+            <div class="slide"><img src="images/twitter.png" alt="logo"></div>
+            <div class="slide"><img src="images/uber.png" alt="logo"></div>
+            <div class="slide"><img src="images/youtube.png" alt="logo"></div>
+        </section>
+    </div> 
+    <p class="copy text-center font-weight-bold">All Rights Reserved &copy; Make Dev</p>
+    
+
+    <script>
+    
+    $(document).ready(function(){
+        $('.customer-logos').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            arrows: false,
+            dots: false,
+            pauseOnHover:false,
+            responsive: [{
+                breakpoint: 768,
+                setting: {
+                    slidesToShow:4
+                }
+            }, {
+                breakpoint: 520,
+                setting: {
+                    slidesToShow: 3
+                }
+            }]
+        });
+    });
+
+    </script> 
+   <div class="video-container">
+    <!-- <marquee>
+        
+   <p>This is markuqee tag</p>
+   <p>This is markuqee tag</p>
+   <p>This is markuqee tag</p>
+
+   <p>This is markuqee tag</p>
+   
+
+   </marquee> -->
+</div>
+ 
+</section>
+ 
+
+</body>
+</html>

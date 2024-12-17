@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background: url('../bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: white;
+            
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            color: #1f76c3;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1rem;
+        }
+        /* Dropdown Menu */
+        .dropdown {
+            position: relative;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            min-width: 200px;
+            top: 100%;
+            left: 0;
+            border-radius: 8px;
+            z-index: 1;
+            margin-top: 10px;
+            
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content a {
+            display: block;
+            padding: 8px 6px;
+            color: #333;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            
+        }
+        .dropdown-content a:hover {
+            background-color: #f0f0f0;
+        }
+        /* Navbar styles */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul li {
+            display: inline;
+            
+        }
+
+        nav ul li a:hover {
+            background-color: #f0f0f0;
+        }
+
+        /* Form container */
+        .form-container {
+            max-width: 400px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            color: #1f76c3;
+        }
+
+        /* Input group */
+        .input-group {
+            margin-bottom: 1rem;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        /* Role selection */
+        .role-selection {
+            margin-bottom: 1.5rem;
+        }
+
+        .role-selection label {
+            margin-right: 1rem;
+            font-size: 1rem;
+        }
+
+        .role-selection input {
+            margin-right: 0.5rem;
+        }
+
+        /* Submit button */
+        .submit-btn {
+            width: 100%;
+            padding: 0.7rem;
+            background-color: #0077ff;
+            border: none;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <a href="/index.html">
+            <h1>ART SPHERE</h1>
+            </a>
+        <nav>
+            <ul>
+                <li><a href="#artists">ARTISTS</a></li>
+                <li><a href="#our-work">OUR WORK</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li class="dropdown">
+                    <a href="#categories">CATEGORIES</a>
+                    <div class="dropdown-content">
+                        <a href="#">Artists</a>
+                        <a href="#">Photographers</a>
+                        <a href="#">Handicrafts</a>
+                        <a href="#">Sculptors</a>
+                    </div>
+                </li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Form container -->
+    <div class="form-container">
+        <h2>Create Your Account</h2>
+        <form action="#" method="post" class="sign-up-form">
+            <div class="input-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <div class="input-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+            </div>
+
+            <div class="role-selection">
+                <p>Are you an artist or a customer?</p>
+                <label for="artist">
+                    <input type="radio" id="artist" name="role" value="artist" required> Artist
+                </label>
+                <label for="customer">
+                    <input type="radio" id="customer" name="role" value="customer" required> Customer
+                </label>
+            </div>
+
+            <button type="submit" class="submit-btn">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>
